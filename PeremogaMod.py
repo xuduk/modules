@@ -30,7 +30,7 @@ class Peremoga(loader.Module):
         self.enabled = self.db.get("PeremogaMod", "enabled", False)
 
     async def peremogacmd(self, message: Message):
-        """Включить или выключить перемогу"""
+        """- включить/выключить переможное автоформатирование"""
         args = utils.get_args_raw(message)
         self.enabled = not self.enabled
         self.db.set("PeremogaMod", "enabled", self.enabled)
