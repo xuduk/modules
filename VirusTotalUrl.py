@@ -102,7 +102,7 @@ class VirusTotalUrlMod(loader.Module):
             timeout = stats.get("timeout", 0)
 
             result_message = (
-                f"<b>**Результаты проверки:**</b>\n"
+                f"<b>**Результаты проверки сайта {args}:**</b>\n"
                 f"<b><emoji document_id=5352888345972187597>✅</emoji> Безопасно: {harmless}</b>\n"
                 f"<b><emoji document_id=5364241851500997604>⚠️</emoji> Вредоносно: {malicious}</b>\n"
                 f"<b><emoji document_id=5393144297048516784>🤨</emoji> Подозрительно: {suspicious}</b>\n"
