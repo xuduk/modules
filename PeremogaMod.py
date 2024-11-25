@@ -45,6 +45,6 @@ class Peremoga(loader.Module):
     async def watcher(self, message: Message):
         if self.enabled and message.out:
             # Заменяем буквы на указанные символы
-            new_text = message.text.replace("а", "і").replace("А", "І").replace("е", "і").replace("Е", "І").replace("ё", "і").replace("Ё", "І").replace("є", "і").replace("Є", "І").replace("и", "і").replace("И", "І").replace("і", "і").replace("І", "І").replace("о", "і").replace("О", "І").replace("у", "і").replace("У", "І").replace("ы", "і").replace("Ы", "І")
+            new_text = message.text.replace("а", "і").replace("А", "І").replace("е", "і").replace("Е", "І").replace("ё", "і").replace("Ё", "І").replace("є", "і").replace("Є", "І").replace("и", "і").replace("И", "І").replace("о", "і").replace("О", "І").replace("у", "і").replace("У", "І").replace("ы", "і").replace("Ы", "І")
 
             await self._client.edit_message(message.peer_id, message.id, new_text)
