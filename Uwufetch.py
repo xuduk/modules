@@ -22,6 +22,7 @@ import shutil
 
 @loader.tds
 class UwufetchMod(loader.Module):
+    """Модуль для простого запуска Uwufetch."""
     strings = {
         "name": "Uwufetch"
     }
